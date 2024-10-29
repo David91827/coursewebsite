@@ -1,0 +1,136 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "F:\\dotNet\\KH202401\\CourseWebAPP\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A5EA4FF0-CF48-4AD0-96F9-B1E77058889E}|..\\CourseDataAccess\\CourseDataAccess.csproj|f:\\dotnet\\kh202401\\coursedataaccess\\repository\\studentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{08F03E81-60D7-43F2-AF2F-E6AFCD0D0190}|CourseWebAPP.csproj|f:\\dotnet\\kh202401\\coursewebapp\\controllers\\membercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{08F03E81-60D7-43F2-AF2F-E6AFCD0D0190}|CourseWebAPP.csproj|solutionrelative:controllers\\membercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{08F03E81-60D7-43F2-AF2F-E6AFCD0D0190}|CourseWebAPP.csproj|f:\\dotnet\\kh202401\\coursewebapp\\views\\member\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{08F03E81-60D7-43F2-AF2F-E6AFCD0D0190}|CourseWebAPP.csproj|solutionrelative:views\\member\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FEB09304-442C-4F05-88F5-63DA3DD6C0DF}|..\\CourseLogic\\CourseLogic.csproj|f:\\dotnet\\kh202401\\courselogic\\interface\\imemberservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{08F03E81-60D7-43F2-AF2F-E6AFCD0D0190}|CourseWebAPP.csproj|f:\\dotnet\\kh202401\\coursewebapp\\models\\userchginfoviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{08F03E81-60D7-43F2-AF2F-E6AFCD0D0190}|CourseWebAPP.csproj|solutionrelative:models\\userchginfoviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FEB09304-442C-4F05-88F5-63DA3DD6C0DF}|..\\CourseLogic\\CourseLogic.csproj|f:\\dotnet\\kh202401\\courselogic\\service\\studentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FEB09304-442C-4F05-88F5-63DA3DD6C0DF}|..\\CourseLogic\\CourseLogic.csproj|f:\\dotnet\\kh202401\\courselogic\\interface\\istudentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MemberController.cs",
+              "DocumentMoniker": "F:\\dotNet\\KH202401\\CourseWebAPP\\Controllers\\MemberController.cs",
+              "RelativeDocumentMoniker": "Controllers\\MemberController.cs",
+              "ToolTip": "F:\\dotNet\\KH202401\\CourseWebAPP\\Controllers\\MemberController.cs",
+              "RelativeToolTip": "Controllers\\MemberController.cs",
+              "ViewState": "AQIAABwAAAAAAAAAAAA1wCgAAAA5AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-17T13:50:31.175Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "IMemberService.cs",
+              "DocumentMoniker": "F:\\dotNet\\KH202401\\CourseLogic\\Interface\\IMemberService.cs",
+              "RelativeDocumentMoniker": "..\\CourseLogic\\Interface\\IMemberService.cs",
+              "ToolTip": "F:\\dotNet\\KH202401\\CourseLogic\\Interface\\IMemberService.cs",
+              "RelativeToolTip": "..\\CourseLogic\\Interface\\IMemberService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAADwvwwAAAA5AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-17T13:55:35.628Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "F:\\dotNet\\KH202401\\CourseWebAPP\\Views\\Member\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Member\\Index.cshtml",
+              "ToolTip": "F:\\dotNet\\KH202401\\CourseWebAPP\\Views\\Member\\Index.cshtml",
+              "RelativeToolTip": "Views\\Member\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-17T13:54:33.978Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "UserChgInfoViewModel.cs",
+              "DocumentMoniker": "F:\\dotNet\\KH202401\\CourseWebAPP\\Models\\UserChgInfoViewModel.cs",
+              "RelativeDocumentMoniker": "Models\\UserChgInfoViewModel.cs",
+              "ToolTip": "F:\\dotNet\\KH202401\\CourseWebAPP\\Models\\UserChgInfoViewModel.cs",
+              "RelativeToolTip": "Models\\UserChgInfoViewModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAADwvwoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-17T13:53:56.321Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "StudentRepository.cs",
+              "DocumentMoniker": "F:\\dotNet\\KH202401\\CourseDataAccess\\Repository\\StudentRepository.cs",
+              "RelativeDocumentMoniker": "..\\CourseDataAccess\\Repository\\StudentRepository.cs",
+              "ToolTip": "F:\\dotNet\\KH202401\\CourseDataAccess\\Repository\\StudentRepository.cs",
+              "RelativeToolTip": "..\\CourseDataAccess\\Repository\\StudentRepository.cs",
+              "ViewState": "AQIAABMAAAAAAAAAAABBwFoAAAA0AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-17T13:53:00.892Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "StudentService.cs",
+              "DocumentMoniker": "F:\\dotNet\\KH202401\\CourseLogic\\Service\\StudentService.cs",
+              "RelativeDocumentMoniker": "..\\CourseLogic\\Service\\StudentService.cs",
+              "ToolTip": "F:\\dotNet\\KH202401\\CourseLogic\\Service\\StudentService.cs",
+              "RelativeToolTip": "..\\CourseLogic\\Service\\StudentService.cs",
+              "ViewState": "AQIAAAsAAAAAAAAAAAA+wDwAAAA2AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-17T13:52:41.048Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "IStudentService.cs",
+              "DocumentMoniker": "F:\\dotNet\\KH202401\\CourseLogic\\Interface\\IStudentService.cs",
+              "RelativeDocumentMoniker": "..\\CourseLogic\\Interface\\IStudentService.cs",
+              "ToolTip": "F:\\dotNet\\KH202401\\CourseLogic\\Interface\\IStudentService.cs",
+              "RelativeToolTip": "..\\CourseLogic\\Interface\\IStudentService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAADwvw0AAAAxAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-17T13:52:14.73Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

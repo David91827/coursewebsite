@@ -1,0 +1,35 @@
+﻿@model CourseWebAPP.Models.UserLoginViewModel;
+@{
+    ViewData["Title"] = "Index";
+}
+
+<div class="alert alert-warning alert-dismissible fade show" role="alert">
+    <strong>會員登入</strong>
+    <div asp-validation-summary="All"></div>
+</div>
+
+
+<form asp-action="index" method="post" class="mx-1 mx-md-4">
+    @Html.AntiForgeryToken()
+    <div class="form-group mt-3">
+        <label class="col-sm-2 col-form-label">Username</label>
+        <div class="col-sm-6">
+            <input type="text" asp-for="Email" class="form-control" placeholder="email" required>
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="col-sm-2 col-form-label">Password</label>
+        <div class="col-sm-6">
+            <input type="password" asp-for="Password" class="form-control" placeholder="password" aria-label="password" required>
+        </div>
+    </div>
+    <div class="form-group" style="margin-top:20px">
+        <div class="col-sm-6">
+            <button type="submit" class="form-control btn btn-primary rounded submit px-3">登入</button>
+        </div>
+        <div class="col-sm-6">
+            <label>no account ? </label>
+            <a asp-action="UserRegister" asp-controller="Login">馬上註冊會員</a>
+        </div>
+    </div>
+</form>

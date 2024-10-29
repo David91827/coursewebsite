@@ -1,0 +1,102 @@
+﻿@model IEnumerable<CourseLogic.Models.CourseScheduleViewModel>;
+@{
+    ViewData["Title"] = "Home Page";
+}
+<div id="courseCarousel" class="carousel slide" data-bs-ride="carousel" style="margin-bottom:20px">
+    <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="3000">
+            <img src="~/Imgs/b1.jpg" class="d-block w-100">
+        </div>
+        <div class="carousel-item" data-bs-interval="3000">
+            <img src="~/Imgs/b2.jpg" class="d-block w-100">
+        </div>
+        <div class="carousel-item">
+            <img src="~/Imgs/b3.jpg" class="d-block w-100">
+        </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#courseCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#courseCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+</div>
+
+
+<div style="margin:10px 0px 10px 10px">
+    <form asp-action="index" asp-controller="Home" method="post">
+        @Html.AntiForgeryToken()
+        <div class="row">
+            <div class="col">
+                <input type="text" name="CourseName" value="@ViewBag.CourseName" class="form-control" placeholder="Course name" aria-label="Course name">
+            </div>
+            <div class="col">
+                <input type="text" name="TeacherName" value="@ViewBag.TeacherName" class="form-control" placeholder="Teacher name" aria-label="Teacher name">
+            </div>
+            <div class="col" style="text-align: left">
+                <button type="submit" class="btn btn-primary">查詢</button>
+            </div>
+        </div>
+    </form>
+</div>
+@{
+    if (TempData["ShopInfo"] != null)
+    {
+        <div class="alert alert-danger" role="alert">
+            @TempData["ShopInfo"].ToString()
+        </div>
+    }
+}
+<div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+@{
+    foreach (var course in Model)
+    {
+            var modalId = "sh" + @course.Id;
+        <div class="col">
+            <div class="card h-100" style="border-color: #007bff;border-width: 2px;">
+                    <img src="~/Imgs/c3.jpg" style="height: 160px;" alt="@course.CourseName">
+                <div class="card-body">
+                    <h5 class="card-title">@course.CourseCode - @course.CourseName</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">授課講師: @course.TeacherName</h6>
+                    <ul class="list-unstyled" style="font-size:14px">
+                        <li><strong>課程長度:</strong> @course.CourseTimes</li>
+                        <li><strong>開始日期:</strong> @course.Sdate.ToString("yyyy-MM-dd")</li>
+                        <li><strong>結束日期:</strong> @course.Edate.ToString("yyyy-MM-dd")</li>
+                        <li><strong>上課地點:</strong> @course.Location</li>
+                    </ul>
+                </div>
+                    <form asp-action="ShopCar" asp-controller="Shop" method="post" style="margin:10px">
+                    <input type="hidden" name="scheduleid" value="@course.Id">
+                    <div class="btn-group" role="group" aria-label="Basic example">
+                        <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#@modalId">簡介</button>
+                        @{
+                            if (Context.User.Identity.IsAuthenticated)
+                            {
+                                <button type="submit" class="btn btn-outline-primary">登記課程</button>
+                            }
+                        }
+
+                    </div>
+                </form>
+            </div>
+        </div>
+
+            <!-- Modal -->
+            <div class="modal fade" id="@modalId" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="staticBackdropLabel">課程簡介</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            @course.CourseDesc
+                        </div>
+                    </div>
+                </div>
+            </div>
+    }
+}
+</div>

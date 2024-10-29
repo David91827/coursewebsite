@@ -1,0 +1,45 @@
+﻿@model CourseWebAPP.Models.UserChgPwdViewModel
+@{
+    ViewData["Title"] = "ChangePwd";
+}
+
+<div class="alert alert-warning alert-dismissible fade show" role="alert">
+    <strong>會員密碼變更</strong>
+</div>
+@if (!string.IsNullOrEmpty(ViewBag.Info))
+{
+    <div class="alert alert-primary" role="alert">
+        @ViewBag.Info
+    </div>
+}
+
+<form asp-action="ChangePwd" method="post" class="mx-1 mx-md-4">
+    @Html.AntiForgeryToken()
+    <div class="form-horizontal">
+        <hr />
+        <div class="form-group">
+            <label class="control-label col-md-2">原登入密碼</label>
+            <div class="col-md-10">
+                <input type="password" asp-for="OldPwd" class="form-control" required>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label col-md-2">新密碼</label>
+            <div class="col-md-10">
+                <input type="password" asp-for="NewPwd" class="form-control" required>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label col-md-2">再次確認密碼</label>
+            <div class="col-md-10">
+                <input type="password" asp-for="ConfirmNewPwd" class="form-control" required>
+            </div>
+        </div>
+        <div class="form-group" style="margin-top:10px">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="儲存" class="btn btn-warning" />
+            </div>
+        </div>
+    </div>
+</form>
+

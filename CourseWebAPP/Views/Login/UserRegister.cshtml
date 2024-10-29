@@ -1,0 +1,40 @@
+﻿@model CourseWebAPP.Models.UserRegisterViewModel;
+@{
+    ViewData["Title"] = "會員註冊";
+}
+<div class="alert alert-warning alert-dismissible fade show" role="alert">
+    <strong>會員註冊</strong>
+    <div asp-validation-summary="All"></div>
+</div>
+
+<div class="row justify-content-center">
+    <div class="col-md-6">
+        <div class="card shadow-lg">
+            <div class="card-body p-5">
+                <h2 class="text-center mb-4">@ViewData["Title"]</h2>
+                <form asp-action="UserRegister" method="post">
+                    @Html.AntiForgeryToken()
+                    <div class="mb-3">
+                        <label class="form-label">UserName</label>
+                        <input asp-for="UserName" class="form-control" />
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Email</label>
+                        <input type="email" asp-for="Email" class="form-control" />
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">PassWord</label>
+                        <input type="password" asp-for="PassWord" class="form-control" />
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">ConfirmPwd</label>
+                        <input type="password" asp-for="ConfirmPwd" class="form-control" />
+                    </div>
+                    <div class="d-grid">
+                        <button type="submit" class="btn btn-primary btn-lg">註冊</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
